@@ -28,7 +28,7 @@ class PostViewController: UIViewController {
             print("Error --- \(error)")
             
             //way 1
-            var getJSONObject = try! JSONSerialization.jsonObject(with: data!) as! [[String : Any]]
+            var getJSONObject = try! JSONSerialization.jsonObject(with: data!) as! [[String : Any]]   //[String : Any]
             
             for dictionary in getJSONObject{
                 let eachDictionary = dictionary as [String : Any]
@@ -68,4 +68,4 @@ class PostViewController: UIViewController {
     
 }
 
-//task - bind data to cell labels on table view 
+//task - bind data to cell labels on table view
